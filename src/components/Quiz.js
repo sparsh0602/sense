@@ -3,6 +3,11 @@ import difficulty from './difficulty.mp3'
 import identify from './identify.mp3'
 import score from './score.mp3'
 import correct from './correct.mp3'
+import m1 from './m1.mp3'
+import m2 from './m2.mp3'
+import m3 from './m3.mp3'
+import m4 from './m4.mp3'
+import m5 from './m5.mp3'
 import {
     BrowserRouter as Router,
     Switch,
@@ -10,6 +15,16 @@ import {
     Link
   } from "react-router-dom";
 export default function Quiz() {
+    const q1 = new Audio(m1);
+    const q2 = new Audio(m2);
+    const q3 = new Audio(m3);
+    const q4 = new Audio(m4);
+    const q5 = new Audio(m5);
+        q1.pause();
+        q2.pause();
+        q3.pause();
+        q4.pause();
+        q5.pause();
     const Sound = new Audio(difficulty);
     const identifySound = new Audio(identify);
     const scoreSound = new Audio(score);
